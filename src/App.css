@@ -1,0 +1,128 @@
+.todo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px; /* Space between elements */
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.todo-container input{
+  flex: 2;
+}
+
+.todo-container button {
+  padding: 10px;
+  margin: 5px;
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .todo-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .todo-container input,
+  .todo-container button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+.title{
+  text-align: center;
+  margin: 10px;
+  padding: 5px;
+  color: rgb(43, 146, 112);
+  font-size: larger;
+  font-weight: 600;
+}
+
+.filter-container {
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.filter-dropdown {
+  padding: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: rgb(209, 133, 156);
+  border-radius: 3px;
+}
+
+.filter-dropdown option {
+  padding: 20px;
+}
+
+.product_coordinator{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 40px;
+}
+
+.product_container {
+  margin: 20px;
+  width: 250px;
+  border-radius: 3px;
+  border: 1px solid #8b8c8a;
+  background-color: aquamarine;
+}
+
+.item_status{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.items{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btn_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.action_btn{
+  border-radius: 3px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+}
+
+.edit{
+  background-color: rgb(111, 170, 62);
+}
+
+.delete{
+  background-color: rgb(205, 65, 65);
+}
+
+.completed{
+  background-color: rgb(46, 218, 89);
+}
+
+.not_completed{
+  background-color: rgb(223, 70, 70);
+}
+
+.filter_row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
